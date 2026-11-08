@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">Capítulo 9</string>
+    <string name="capitulo_9">Capítulo 9</string>
+    <string name="manual_example">Ejemplo del manual: viaje</string>
+    <string name="btn_enviar">Enviar</string>
+    <string name="classic_click">Botón clásico pulsado</string>
+    <string name="material_filled">Filled</string>
+    <string name="material_binding">Con Binding</string>
+    <string name="material_click">Botón Material pulsado</string>
+    <string name="material_long_click">Mantuviste pulsado el botón Material</string>
+    <string name="image_long_click">Mantuviste pulsado el botón de correo</string>
+    <string name="tema_android">Android</string>
+    <string name="tema_kotlin">Kotlin</string>
+    <string name="tema_firebase">Firebase</string>
+    <string name="enabled">Sí</string>
+    <string name="disabled">No</string>
+    <string name="fab_viaje">Acción de viaje</string>
+    <string name="btn_login">Iniciar sesión</string>
+    <string name="btn_email">Correo electrónico</string>
+    <string name="chip_parking">Parking</string>
+    <string name="chip_balcon">Balcón</string>
+    <string name="chip_banos">2 baños</string>
+    <string name="chip_piscina">Piscina</string>
+    <string name="rb_playa">Playa</string>
+    <string name="rb_montana">Montaña</string>
+    <string name="rb_auto">Auto</string>
+    <string name="rb_avion">Avión</string>
+    <string name="rb_tren">Tren</string>
+    <string name="cb_seguro">Seguro de viaje</string>
+    <string name="cb_cancelable">Reserva cancelable</string>
+    <string name="tg_normal">Opción de viaje</string>
+    <string name="on">ON</string>
+    <string name="off">OFF</string>
+    <string name="tg_custom">Modo viaje</string>
+    <string name="sw_normal">Notificar cambios por email</string>
+    <string name="sw_custom">Notificación de cambios</string>
+    <string name="chip_extra">Opción</string>
+    <item type="id" name="chip_extra" />
+    <string name="chip_removed">Se eliminó %1$s</string>
+    <string name="chip_clicked">Opción: %1$s</string>
+    <string name="destination_changed">Destino: %1$s</string>
+    <string name="transport_changed">Transporte: %1$s</string>
+    <string name="control_enabled">%1$s: activado</string>
+    <string name="control_disabled">%1$s: desactivado</string>
+    <string name="fab_clicked">Botón flotante pulsado</string>
+</resources>

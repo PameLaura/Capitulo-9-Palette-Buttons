@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:accessibilityHeading="true"
+            android:text="@string/capitulo_9"
+            android:textAppearance="?attr/textAppearanceTitleLarge" />
+
+        <android.widget.Button
+            android:id="@+id/btn_enviar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_enviar" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_material"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/material_filled" />
+
+        <ImageButton
+            android:id="@+id/btn_video_email"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:contentDescription="@string/btn_email"
+            android:src="@android:drawable/ic_dialog_email" />
+
+        <com.google.android.material.chip.ChipGroup
+            android:id="@+id/cg_temas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:singleSelection="true">
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip_tema_android"
+                style="@style/Widget.Material3.Chip.Filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checkable="true"
+                android:text="@string/tema_android" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip_tema_kotlin"
+                style="@style/Widget.Material3.Chip.Filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checkable="true"
+                android:text="@string/tema_kotlin" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip_tema_firebase"
+                style="@style/Widget.Material3.Chip.Filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checkable="true"
+                android:text="@string/tema_firebase" />
+        </com.google.android.material.chip.ChipGroup>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:accessibilityHeading="true"
+            android:text="@string/manual_example"
+            android:textAppearance="?attr/textAppearanceTitleLarge" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_viaje"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:contentDescription="@string/fab_viaje"
+            app:srcCompat="@drawable/ic_airplane"
+            app:backgroundTint="@color/travel_orange"
+            app:tint="@color/black" />
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_login"
+            android:drawableStart="@android:drawable/ic_dialog_email"
+            android:drawablePadding="8dp"
+            android:backgroundTint="@color/travel_orange"
+            android:textColor="@color/black" />
+
+        <ImageButton
+            android:id="@+id/btn_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:contentDescription="@string/btn_email"
+            android:src="@android:drawable/ic_dialog_email"
+            android:backgroundTint="@color/travel_green" />
+
+        <com.google.android.material.chip.ChipGroup
+            android:id="@+id/cg_condiciones"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp">
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip_parking"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/chip_parking"
+                app:chipIcon="@drawable/ic_car"
+                app:chipIconTint="?attr/colorOnSurface"
+                app:closeIconVisible="true" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip_balcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/chip_balcon"
+                app:closeIconVisible="true" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip_banos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/chip_banos"
+                app:closeIconVisible="true" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip_piscina"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/chip_piscina"
+                app:closeIconVisible="true" />
+        </com.google.android.material.chip.ChipGroup>
+
+        <RadioGroup
+            android:id="@+id/rg_destino"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:checkedButton="@+id/rb_montana">
+            <RadioButton
+                android:id="@+id/rb_playa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/rb_playa" />
+
+            <RadioButton
+                android:id="@+id/rb_montana"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/rb_montana" />
+        </RadioGroup>
+
+        <RadioGroup
+            android:id="@+id/rg_transporte"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:checkedButton="@+id/rb_auto"
+            android:layout_marginVertical="8dp">
+            <RadioButton
+                android:id="@+id/rb_auto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/rb_auto"
+                android:drawableTop="@drawable/ic_car"
+                android:paddingVertical="4dp"
+                android:minWidth="64dp"
+                android:minHeight="48dp"
+                android:button="@null"
+                android:background="@drawable/travel_choice"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:layout_marginEnd="8dp" />
+
+            <RadioButton
+                android:id="@+id/rb_avion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/rb_avion"
+                android:drawableTop="@drawable/ic_airplane"
+                android:paddingVertical="4dp"
+                android:minWidth="64dp"
+                android:minHeight="48dp"
+                android:button="@null"
+                android:background="@drawable/travel_choice"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:layout_marginEnd="8dp" />
+
+            <RadioButton
+                android:id="@+id/rb_tren"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/rb_tren"
+                android:drawableTop="@drawable/ic_train"
+                android:paddingVertical="4dp"
+                android:minWidth="64dp"
+                android:minHeight="48dp"
+                android:button="@null"
+                android:background="@drawable/travel_choice"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:layout_marginEnd="8dp" />
+        </RadioGroup>
+
+        <CheckBox
+            android:id="@+id/cb_seguro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cb_seguro"
+            android:checked="true"
+            android:buttonTint="@color/travel_orange" />
+
+        <CheckBox
+            android:id="@+id/cb_cancelable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cb_cancelable"
+            android:checked="true"
+            android:buttonTint="@color/travel_blue" />
+
+        <ToggleButton
+            android:id="@+id/tg_normal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:textOn="@string/enabled"
+            android:textOff="@string/disabled"
+            android:contentDescription="@string/tg_normal" />
+
+        <ToggleButton
+            android:id="@+id/tg_custom"
+            android:layout_width="72dp"
+            android:layout_height="48dp"
+            android:layout_marginVertical="8dp"
+            android:textOn="@string/on"
+            android:textOff="@string/off"
+            android:background="@drawable/travel_choice"
+            android:textColor="@color/black"
+            android:contentDescription="@string/tg_custom" />
+
+        <Switch
+            android:id="@+id/sw_normal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/sw_normal"
+            android:minHeight="48dp"
+            android:thumbTint="@color/travel_orange"
+            android:trackTint="@color/travel_green" />
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/sw_custom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/sw_custom"
+            android:minHeight="48dp"
+            android:checked="true"
+            android:textOn="@string/on"
+            android:textOff="@string/off"
+            app:showText="true"
+            app:thumbTint="@color/travel_orange"
+            app:trackTint="@color/travel_blue" />
+    </LinearLayout>
+</ScrollView>
